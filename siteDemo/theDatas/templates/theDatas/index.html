@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试页面</title>
+</head>
+<body>
+{% if all_data%}
+    <ul>
+    {% for data in all_data %}
+        <li>{{ data.name }}</li>
+        <li>{{ data.enName }}</li>
+        <li>---分割线---</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No data are available.</p>
+{% endif %}
+</body>
+</html>
